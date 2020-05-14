@@ -1,0 +1,16 @@
+trigger:
+- master
+
+pr:
+  branches:
+    include:
+    - BranchT
+    - master
+
+pool:
+  vmImage: 'windows-latest'
+
+steps:
+
+- script: echo Hello, Master!
+  displayName: 'Run mother script'
